@@ -1,0 +1,34 @@
+{
+  "name": "nds-home-template",
+  "version": "1.0.0",
+  "description": "A Bootstrap 5 based project template with custom CSS, SCSS, JS, and plugins.",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "keywords": [
+    "bootstrap",
+    "template",
+    "scss",
+    "javascript",
+    "gulp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^3.0.3",
+    "cssnano": "^6.0.1",
+    "del": "^6.1.1",
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.72.0"
+  },
+  "dependencies": {
+    "postcss": "^8.1.0"
+  }
+}
