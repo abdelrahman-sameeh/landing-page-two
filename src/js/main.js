@@ -107,7 +107,7 @@ const translations = {
 };
 
 const applyTranslations = (translations, isBodyContent = true) => {
-  const currentLang = localStorage.getItem("language") || 'en';
+  const currentLang = localStorage.getItem("language") || 'ar';
   const texts = translations[currentLang];
   let items =  document.querySelectorAll(
     "header [data-translate], footer [data-translate]"

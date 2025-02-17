@@ -1,14 +1,26 @@
 
+.main-title{
+  font-size: 30px;
+}
+.lh{
+  line-height: 2.2;
+}
+
+
+
 /* hero */
 
 section.hero-section{
   background-image: url('../assets/images/landing-1/hero.jpeg');
-  height: 90vh;
+  height: 491px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -105px;
+  background-color: var(--background-neutral-50);;
 }
+
 section.hero-section p{
-  font-size: 4.5vw;
+  font-size: 60px;
 }
 
 /* About */
@@ -76,16 +88,20 @@ section.development .icon img {
   object-fit: cover;
 }
 
+section.development .accordion-item{
+  border-radius: 12px;
+}
+
 section.development .accordion-header  .accordion-button{
   justify-content: space-between !important;
   color: black;
   background-color: white;
+  padding: 22px 32px;
 }
 
 section.development .accordion-header  .accordion-button.collapsed{
   background-color: var(--colors-primary-sa-flag-600-primary);
   color: white;
-  
 }
 
 section.development .accordion-header  .accordion-button.collapsed::after{
@@ -105,6 +121,7 @@ section.development .right{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
 }
 
 
@@ -136,8 +153,35 @@ section.partners .btn.next {
 
 
 
-@media (max-width: 767px) {
-section.news  .row.reversed{
-  flex-direction: column-reverse;
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1440px !important;
+  }
 }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  section.hero-section{
+    height: 350px;
+  }
+  section.hero-section p{
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .lh{
+    line-height: 1.5;
+  }
+  section.hero-section p{
+    font-size: 35px;
+  }
+  section.hero-section{
+    background-position-y: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  section.news  .row.reversed{
+    flex-direction: column-reverse;
+  }
 }
