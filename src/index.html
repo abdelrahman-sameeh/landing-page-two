@@ -1,1320 +1,989 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#074D31" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-theme-color" content="#074D31" />
-    <meta name="apple-mobile-web-app-title" content="NDS Home Template" />
-    <link
-      rel="mask-icon"
-      href="./assets/images/shared/gov_logo.svg"
-      color="#4CAF50"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/images/shared/gov_logo.ico"
-    />
-    <title>Home</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!-- custom -->
-    <link rel="stylesheet" href="./css/your-custom-css-file.css" />
-  </head>
+<html lang="ar" dir="rtl">
 
-  <body>
-    <!-- navbar -->
-    <header>
-      <!-- Top Bar -->
-      <div
-        class="topBar icons d-flex justify-content-between py-2 px-4 flex-wrap"
-      >
-        <!-- start Icons -->
-        <ul
-          class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0"
-        >
-          <li>
-            <i class="bi bi-cloud"></i>
-            <span data-translate="cloud">Cloud</span>
-          </li>
-          <li>
-            <i class="bi bi-calendar"></i>
-            <span data-translate="date">3-Sep-2024</span>
-          </li>
-          <li>
-            <i class="bi bi-clock"></i>
-            <span data-translate="time">2:30 PM</span>
-          </li>
-          <li>
-            <i class="bi bi-geo-alt"></i>
-            <span data-translate="location">Al-Riyadh</span>
-          </li>
-        </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#074D31" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-theme-color" content="#074D31" />
+  <meta name="apple-mobile-web-app-title" content="NDS Home Template" />
+  <link rel="mask-icon" href="./assets/images/shared/gov_logo.svg" color="#4CAF50" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/shared/gov_logo.ico" />
+  <title>Home</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- custom -->
+  <link rel="stylesheet" href="./css/your-custom-css-file.css" />
+</head>
 
-        <!-- end Icons -->
-        <ul
-          class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0"
-        >
-          <li><i class="bi bi-mic"></i></li>
-          <li><i class="bi bi-zoom-in"></i></li>
-          <li><i class="bi bi-zoom-out"></i></li>
-          <li><i class="bi bi-eye"></i></li>
-        </ul>
-      </div>
+<body>
+  <!-- navbar -->
+  <header>
+    <!-- Top Bar -->
+    <div class="topBar icons d-flex justify-content-end  py-2 px-4 flex-wrap">
+      <!-- start Icons -->
+      <!-- <ul class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0">
+        <li>
+          <i class="bi bi-cloud"></i>
+          <span data-translate="cloud">Cloud</span>
+        </li>
+        <li>
+          <i class="bi bi-calendar"></i>
+          <span data-translate="date">3-Sep-2024</span>
+        </li>
+        <li>
+          <i class="bi bi-clock"></i>
+          <span data-translate="time">2:30 PM</span>
+        </li>
+        <li>
+          <i class="bi bi-geo-alt"></i>
+          <span data-translate="location">Al-Riyadh</span>
+        </li>
+      </ul> -->
 
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-0 px-md-2">
-          <!-- Brand Section -->
-          <div
-            class="navbar-brand w-fit row col-2 col-sm-2 col-auto align-items-center mx-0"
-          >
-            <div class="d-flex align-items-center justify-content-start gap-2">
-              <img
-                class="logo1"
-                src="./assets/images/landing-1/logo1.png"
-                alt="logo"
-              />
-              <div class="pipeline"></div>
-              <img
-                class="logo2"
-                src="./assets/images/landing-1/logo2.png"
-                alt="logo"
-              />
-            </div>
+      <!-- end Icons -->
+      <ul class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0">
+        <li><i class="bi bi-mic"></i></li>
+        <li><i class="bi bi-zoom-in"></i></li>
+        <li><i class="bi bi-zoom-out"></i></li>
+        <li><i class="bi bi-eye"></i></li>
+      </ul>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-0 px-md-2">
+        <!-- Brand Section -->
+        <div class="navbar-brand w-fit row col-2 col-sm-2 col-auto align-items-center mx-0">
+          <div class="d-flex align-items-center justify-content-start gap-2">
+            <a href="#hero"><img class="logo1" src="./assets/images/landing-1/logo1.png" alt="logo" /></a>
+            <div class="pipeline opacity-50"></div>
+            <img class="logo2" src="./assets/images/landing-1/logo2.png" alt="logo" />
           </div>
+        </div>
 
-          <!-- Toggler Button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon">
-              <i class="bi bi-list fs-1"></i>
-            </span>
-          </button>
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#herobarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="bi bi-list fs-1"></i>
+          </span>
+        </button>
 
-          <!-- Navbar Content -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Search and Buttons -->
-            <form
-              class="d-flex flex-grow-1 gap-1 align-items-center justify-content-center justify-content-md-end flex-wrap"
-            >
-              <div class="input-group px-2 d-flex" id="header-search">
-                <span
-                  class="input-group-text px-0 bg-transparent border-0"
-                  id="search-input-icon"
-                >
-                  <i class="bi bi-search"></i>
-                </span>
-                <input
-                  type="text"
-                  class="form-control bg-transparent border-0 shadow-none flex-grow-1"
-                  placeholder="Search"
-                  aria-label="Search"
-                  aria-describedby="search-input-icon"
-                  id="search-input"
-                  data-translate="searchPlaceholder"
-                />
-              </div>
-              <button
-                href=""
-                type="button"
-                id="langButton"
-                class="btn shadow-none"
-              >
-                <i class="bi bi-translate fs-5"></i>
-                <span data-translate="langButton">عربى</span>
-              </button>
-              <a href="#" type="button" class="btn shadow-none">
-                <i class="bi bi-person fs-5"></i>
-                <span class="login" data-translate="login">Login</span>
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Links -->
+          <ul class="navbar-nav d-flex flex-grow-1 gap-2 mb-2 mb-lg-0 ps-4 ps-md-0 py-4 py-md-0 ps-5 ms-5">
+            <li class="nav-item">
+              <a class="nav-link" href="#About"> عن المركز </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services"> مجالات عمل المركز </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#development">
+                برنامج تطوير الخريجين
               </a>
-            </form>
-          </div>
+            </li>
+          </ul>
+          <!-- Search and Buttons -->
+          <form
+            class="d-flex flex-grow-1 gap-1 align-items-center justify-content-center justify-content-md-end flex-wrap">
+            <div class="input-group px-2 d-flex" id="header-search">
+              <span class="input-group-text px-0 bg-transparent border-0" id="search-input-icon">
+                <i class="bi bi-search"></i>
+              </span>
+              <input type="text" class="form-control bg-transparent border-0 shadow-none flex-grow-1"
+                placeholder="Search" aria-label="Search" aria-describedby="search-input-icon" id="search-input"
+                data-translate="searchPlaceholder" />
+            </div>
+            <button href="" type="button" id="langButton" class="btn shadow-none">
+              <i class="bi bi-translate fs-5"></i>
+              <span data-translate="langButton">عربى</span>
+            </button>
+            <a href="#" type="button" class="btn shadow-none">
+              <i class="bi bi-person fs-5"></i>
+              <span class="login" data-translate="login">Login</span>
+            </a>
+          </form>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- hero section -->
-    <section class="hero-section d-flex justify-content-start align-items-end">
-      <p class="h1 text-light">مركز دعم اتخاذ القرار</p>
-    </section>
+  <!-- hero section -->
+  <section id="hero" class="hero-section d-flex justify-content-start align-items-end">
+    <p class="h1 text-light">مركز دعم اتخاذ القرار</p>
+  </section>
 
-    <!-- About Us section -->
-    <section id="About" class="about py-5 background-neutral-50">
-      <div class="container">
-        <div class="row mx-0 g-3">
-          <div class="col-12 col-md-6">
-            <h3 class="main-title fw-bold">عن المركز</h3>
-            <div class="main-line mt-2 rounded"></div>
-            <p class="mt-5 lh">
-              تأسس مركز دعم اتخاذ القرار في 9 شعبان 1437هـ (16 مايو 2016م) بقرار
-              من مجلس الوزراء رقم (337)، بهدف تعزيز كفاءة عملية صنع القرار في
-              السعودية عبر آليات علمية وعملية.
+  <!-- About Us section -->
+  <section id="About" class="about py-5 background-neutral-50">
+    <div class="container">
+      <div class="row mx-0 g-3">
+        <div class="col-12 col-md-6">
+          <h3 class="main-title fw-bold">عن المركز</h3>
+          <div class="main-line mt-2 rounded"></div>
+          <p class="mt-5 lh">
+            تأسس مركز دعم اتخاذ القرار في 9 شعبان 1437هـ (16 مايو 2016م) بقرار
+            من مجلس الوزراء رقم (337)، بهدف تعزيز كفاءة عملية صنع القرار في
+            السعودية عبر آليات علمية وعملية.
+          </p>
+          <p class="mt-4 lh">
+            يقوم المركز بجمع وتحليل البيانات، وإجراء دراسات معمقة حول القضايا
+            المهمة، بالإضافة إلى رصد وتحليل الأحداث المحلية والدولية. كما يدعم
+            متخذي القرار بمعلومات دقيقة تسهم في رسم السياسات والاستراتيجيات
+            الوطنية، إلى جانب تثقيف الرأي العام حول القرارات وأثرها، مما يجعله
+            عنصرًا مهمًا في تحقيق رؤية السعودية 2030.
+          </p>
+          <p class="mt-4 lh">
+            يعتمد المركز على تقنيات حديثة مثل تحليل البيانات الضخمة والتنبؤ
+            المستقبلي، مما يساعد في اتخاذ قرارات استباقية. كما يعمل بالتعاون
+            مع الجهات الحكومية والخاصة لضمان تكامل المعلومات وتحقيق أقصى فائدة
+            منها.
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="./assets/images/landing-1/about.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- new and articles section -->
+  <section class="news py-4">
+    <div class="container">
+      <div class="row mx-0 g-3">
+        <div class="col-12 col-md-6">
+          <h4 class="main-title fw-bold">رؤية مركز دعم اتخاذ</h4>
+          <div class="main-line mt-2 rounded"></div>
+          <div class="wrapper-text">
+            <p class="lh">
+              رؤية مركز دعم اتخاذ القرار تتمثل في أن يكون جهة رائدة تقدم الرأي
+              والمشورة لدعم القيادة في المملكة العربية السعودية، من خلال توفير
+              حلول مبتكرة وموثوقة تستند إلى أبحاث ودراسات دقيقة. يسعى المركز
+              إلى أن يكون مرجعًا معتمدًا في تقديم التحليلات العميقة والتوصيات
+              الاستراتيجية، بما يساهم في تحقيق أهداف التنمية الوطنية ورؤية
+              المملكة 2030.
             </p>
-            <p class="mt-4 lh">
-              يقوم المركز بجمع وتحليل البيانات، وإجراء دراسات معمقة حول القضايا
-              المهمة، بالإضافة إلى رصد وتحليل الأحداث المحلية والدولية. كما يدعم
-              متخذي القرار بمعلومات دقيقة تسهم في رسم السياسات والاستراتيجيات
-              الوطنية، إلى جانب تثقيف الرأي العام حول القرارات وأثرها، مما يجعله
-              عنصرًا مهمًا في تحقيق رؤية السعودية 2030.
+            <p class="lh">
+              يعمل المركز على تعزيز قدراته ليكون شريكًا استراتيجيًا للقيادة،
+              مسهمًا في اتخاذ قرارات مؤثرة ومستدامة تدعم تطور المملكة ورفاهية
+              مواطنيها. ولتحقيق ذلك، يحرص على الاستفادة من أحدث التقنيات في
+              تحليل البيانات واستشراف المستقبل، مع تعزيز التعاون مع الجهات
+              البحثية والمؤسسات الاستشارية العالمية.
             </p>
-            <p class="mt-4 lh">
-              يعتمد المركز على تقنيات حديثة مثل تحليل البيانات الضخمة والتنبؤ
-              المستقبلي، مما يساعد في اتخاذ قرارات استباقية. كما يعمل بالتعاون
-              مع الجهات الحكومية والخاصة لضمان تكامل المعلومات وتحقيق أقصى فائدة
-              منها.
+            <p class="lh">
+              كما يلتزم المركز بتطوير كوادره البشرية وبناء بيئة عمل محفزة
+              للإبداع والابتكار، ما يمكنه من تقديم رؤى استشرافية متكاملة تدعم
+              صناع القرار في مواجهة التحديات واستغلال الفرص المتاحة. من خلال
+              تقديم دراسات معمقة، وطرح حلول قائمة على الأدلة والبراهين
+              العلمية، يسعى المركز إلى الارتقاء بجودة السياسات العامة وتعزيز
+              جاهزية المملكة لمواكبة المتغيرات الإقليمية والدولية.
             </p>
           </div>
-          <div class="col-12 col-md-6">
-            <img src="./assets/images/landing-1/about.png" alt="" />
+        </div>
+        <div class="col-12 col-md-6">
+          <img class="w-100 h-100 object-fit-cover" src="./assets/images/landing-1/news1.png" alt="" />
+        </div>
+      </div>
+      <div class="row mx-0 g-3 mt-5 reversed">
+        <div class="col-12 col-md-6">
+          <img class="w-100 h-100 object-fit-cover" src="./assets/images/landing-1/news2.png" alt="" />
+        </div>
+        <div class="col-12 col-md-6">
+          <h4 class="main-title fw-bold">رسالة مركز دعم اتخاذ القرار</h4>
+          <div class="main-line mt-2 rounded"></div>
+          <div class="wrapper-text">
+            <p class="lh">
+              يسعى المركز إلى دعم عملية صنع القرار وتحسين فاعليته من خلال
+              توفير بيانات دقيقة وتحليلات معمقة في الوقت المناسب، معتمداً على
+              منهجيات علمية وتقنيات متقدمة لضمان قرارات مستدامة وفعالة تدعم
+              القيادة في مواجهة التحديات واستغلال الفرص.
+            </p>
+            <p class="lh">
+              يعمل المركز على تعزيز جودة وكفاءة القرارات من خلال التقييم
+              المستمر لنواتجها، وضمان توافقها مع المستجدات المحلية والدولية،
+              بما يحقق الأهداف الاستراتيجية للمملكة ورؤية 2030. كما يركز على
+              تطوير أدوات استشراف المستقبل، وتمكين صناع القرار من اتخاذ خيارات
+              مدروسة قائمة على الأدلة والتحليلات العميقة.
+            </p>
+            <p class="lh">
+              عبر بناء شراكات استراتيجية مع الجهات البحثية والاستشارية، يسهم
+              المركز في تقديم حلول مبتكرة تدعم التنمية المستدامة، وتعزز جودة
+              الحياة، وترسخ مكانة المملكة كمركز ريادي في التخطيط الاستراتيجي
+              واتخاذ القرار المبني على المعرفة.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Service section  -->
-    <section id="services" class="nds-services container-fluid overflow-hidden">
-      <div class="container">
-        <div class="row m-0">
-          <div class="col-8 col-md-8 p-0">
-            <h2 class="main-title fw-bold">مجالات عمل المركز</h2>
-            <div class="main-line mt-2 rounded"></div>
-          </div>
-          <div
-            class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start"
-          >
-            <button class="btn btn-default border shadow-none">View all</button>
-          </div>
-        </div>
-
-        <p class="col-9 mt-3">
-          هنا يمكنك إضافة وصف مختصر حول الغرض من البوابة متبوعًا بزر الحث على
-          اتخاذ إجراء.
-        </p>
-      </div>
-
-      <!-- Swiper Section -->
-      <div class="swiper service-swiper swiper-container position-relative">
-        <div class="swiper-wrapper mt-5">
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">
-                  إعداد الدراسات التنموية
-                </h2>
-                <p class="text-truncate-4 small lh">
-                  إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
-                  يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">
-                  إعداد الدراسات التنموية
-                </h2>
-                <p class="text-truncate-4 small lh">
-                  إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
-                  يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">
-                  إعداد الدراسات التنموية
-                </h2>
-                <p class="text-truncate-4 small lh">
-                  إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
-                  يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">
-                  إعداد الدراسات التنموية
-                </h2>
-                <p class="text-truncate-4 small lh">
-                  إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
-                  يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">
-                  إعداد الدراسات التنموية
-                </h2>
-                <p class="text-truncate-4 small lh">
-                  إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
-                  يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">
-                  إعداد الدراسات التنموية
-                </h2>
-                <p class="text-truncate-4 small lh">
-                  إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
-                  يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">
-                  إعداد الدراسات التنموية
-                </h2>
-                <p class="text-truncate-4 small lh">
-                  إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
-                  يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-100 mt-4">
-          <div
-            class="d-flex justify-content-between align-items-center py-4 mx-5"
-          >
-            <!-- Pagination -->
-            <div
-              class="service-swiper-pagination swiper-pagination position-relative start-0 end-0 bottom-0"
-            ></div>
-            <div class="position-relative me-5 pe-4">
-              <!-- Navigation buttons -->
-              <div class="swiper-button-prev start-0 end-0 bottom-0"></div>
-              <div
-                class="swiper-button-next start-0 end-0 bottom-0"
-                style="left: 50px !important"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- new and articles section -->
-    <section class="news py-4 background-neutral-50">
-      <div class="container">
-        <div class="row mx-0 g-3">
-          <div class="col-12 col-md-6">
-            <h4 class="main-title fw-bold">رؤية مركز دعم اتخاذ</h4>
-            <div class="main-line mt-2 rounded"></div>
-            <div class="wrapper-text">
-              <p class="lh">
-                رؤية مركز دعم اتخاذ القرار تتمثل في أن يكون جهة رائدة تقدم الرأي
-                والمشورة لدعم القيادة في المملكة العربية السعودية، من خلال توفير
-                حلول مبتكرة وموثوقة تستند إلى أبحاث ودراسات دقيقة. يسعى المركز
-                إلى أن يكون مرجعًا معتمدًا في تقديم التحليلات العميقة والتوصيات
-                الاستراتيجية، بما يساهم في تحقيق أهداف التنمية الوطنية ورؤية
-                المملكة 2030.
-              </p>
-              <p class="lh">
-                يعمل المركز على تعزيز قدراته ليكون شريكًا استراتيجيًا للقيادة،
-                مسهمًا في اتخاذ قرارات مؤثرة ومستدامة تدعم تطور المملكة ورفاهية
-                مواطنيها. ولتحقيق ذلك، يحرص على الاستفادة من أحدث التقنيات في
-                تحليل البيانات واستشراف المستقبل، مع تعزيز التعاون مع الجهات
-                البحثية والمؤسسات الاستشارية العالمية.
-              </p>
-              <p class="lh">
-                كما يلتزم المركز بتطوير كوادره البشرية وبناء بيئة عمل محفزة
-                للإبداع والابتكار، ما يمكنه من تقديم رؤى استشرافية متكاملة تدعم
-                صناع القرار في مواجهة التحديات واستغلال الفرص المتاحة. من خلال
-                تقديم دراسات معمقة، وطرح حلول قائمة على الأدلة والبراهين
-                العلمية، يسعى المركز إلى الارتقاء بجودة السياسات العامة وتعزيز
-                جاهزية المملكة لمواكبة المتغيرات الإقليمية والدولية.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <img
-              class="w-100 h-100 object-fit-cover"
-              src="./assets/images/landing-1/news1.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="row mx-0 g-3 mt-5 reversed">
-          <div class="col-12 col-md-6">
-            <img
-              class="w-100 h-100 object-fit-cover"
-              src="./assets/images/landing-1/news2.png"
-              alt=""
-            />
-          </div>
-          <div class="col-12 col-md-6">
-            <h4 class="main-title fw-bold">رسالة مركز دعم اتخاذ القرار</h4>
-            <div class="main-line mt-2 rounded"></div>
-            <div class="wrapper-text">
-              <p class="lh">
-                يسعى المركز إلى دعم عملية صنع القرار وتحسين فاعليته من خلال
-                توفير بيانات دقيقة وتحليلات معمقة في الوقت المناسب، معتمداً على
-                منهجيات علمية وتقنيات متقدمة لضمان قرارات مستدامة وفعالة تدعم
-                القيادة في مواجهة التحديات واستغلال الفرص.
-              </p>
-              <p class="lh">
-                يعمل المركز على تعزيز جودة وكفاءة القرارات من خلال التقييم
-                المستمر لنواتجها، وضمان توافقها مع المستجدات المحلية والدولية،
-                بما يحقق الأهداف الاستراتيجية للمملكة ورؤية 2030. كما يركز على
-                تطوير أدوات استشراف المستقبل، وتمكين صناع القرار من اتخاذ خيارات
-                مدروسة قائمة على الأدلة والتحليلات العميقة.
-              </p>
-              <p class="lh">
-                عبر بناء شراكات استراتيجية مع الجهات البحثية والاستشارية، يسهم
-                المركز في تقديم حلول مبتكرة تدعم التنمية المستدامة، وتعزز جودة
-                الحياة، وترسخ مكانة المملكة كمركز ريادي في التخطيط الاستراتيجي
-                واتخاذ القرار المبني على المعرفة.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- values -->
-    <section>
-      <div class="container">
+    </div>
+  </section>
+  <!-- Service section  -->
+  <section id="services" class="nds-services container-fluid overflow-hidden  background-neutral-50">
+    <div class="container">
+      <div class="row m-0">
         <div class="col-8 col-md-8 p-0">
-          <h3 class="main-title fw-bold">القيم البارزة</h3>
+          <h2 class="main-title fw-bold">مجالات عمل المركز</h2>
           <div class="main-line mt-2 rounded"></div>
         </div>
-        <p class="my-3">
-          هنا يمكنك إضافة وصف مختصر حول الغرض من البوابة متبوعًا بزر الحث على
-          اتخاذ إجراء.
-        </p>
-
-        <div class="row mx-0 g-4">
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="p-2 rounded border">
-              <img
-                class="w-100 rounded"
-                src="./assets/images/landing-1/val1.png"
-                alt=""
-              />
-              <p class="fw-bold mt-3">التجاوب</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="p-2 rounded border">
-              <img
-                class="w-100 rounded"
-                src="./assets/images/landing-1/val2.png"
-                alt=""
-              />
-              <p class="fw-bold mt-3">التعاون</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="p-2 rounded border">
-              <img
-                class="w-100 rounded"
-                src="./assets/images/landing-1/val3.png"
-                alt=""
-              />
-              <p class="fw-bold mt-3">الموضوعية</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="p-2 rounded border">
-              <img
-                class="w-100 rounded"
-                src="./assets/images/landing-1/val4.png"
-                alt=""
-              />
-              <p class="fw-bold mt-3">الامتياز</p>
-            </div>
-          </div>
+        <div class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start">
+          <button class="btn btn-default border shadow-none">View all</button>
         </div>
       </div>
-    </section>
 
-    <section id="services" class="container-fluid overflow-hidden">
-      <div class="container">
-        <div class="row m-0">
-          <div class="col-8 col-md-8 p-0">
-            <h4 class="fw-bold main-title">
-              أبرز مهام مركز دعم اتخاذ القرار واختصاصاته
-            </h4>
-            <div class="main-line mt-2 rounded"></div>
-          </div>
-          <div
-            class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start"
-          >
-            <button class="btn btn-default border shadow-none">View all</button>
-          </div>
-        </div>
-
-        <p class="col-9 mt-3">
-          هنا يمكنك إضافة وصف مختصر حول الغرض من البوابة متبوعًا بزر الحث على
-          اتخاذ إجراء.
-        </p>
-      </div>
-
-      <!-- Swiper Section -->
-      <div class="swiper service-swiper swiper-container position-relative">
-        <div class="swiper-wrapper mt-5">
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
-                <p class="text-truncate-4 small lh">
-                  بناء الشراكات مع الاجهزة الحكومية المختلفة
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
-                <p class="text-truncate-4 small lh">
-                  بناء الشراكات مع الاجهزة الحكومية المختلفة
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
-                <p class="text-truncate-4 small lh">
-                  بناء الشراكات مع الاجهزة الحكومية المختلفة
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
-                <p class="text-truncate-4 small lh">
-                  بناء الشراكات مع الاجهزة الحكومية المختلفة
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
-                <p class="text-truncate-4 small lh">
-                  بناء الشراكات مع الاجهزة الحكومية المختلفة
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
-                <p class="text-truncate-4 small lh">
-                  بناء الشراكات مع الاجهزة الحكومية المختلفة
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card p-3 box">
-              <div class="image">
-                <img
-                  class="w-100 object-fit-cover"
-                  src="./assets/images/home/news.png"
-                  alt=""
-                />
-              </div>
-              <div class="cardContent">
-                <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
-                <p class="text-truncate-4 small lh">
-                  بناء الشراكات مع الاجهزة الحكومية المختلفة
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-100 mt-4">
-          <div
-            class="d-flex justify-content-between align-items-center py-4 mx-5"
-          >
-            <!-- Pagination -->
-            <div
-              class="service-swiper-pagination swiper-pagination position-relative start-0 end-0 bottom-0"
-            ></div>
-            <div class="position-relative me-5 pe-4">
-              <!-- Navigation buttons -->
-              <div class="swiper-button-prev start-0 end-0 bottom-0"></div>
-              <div
-                class="swiper-button-next start-0 end-0 bottom-0"
-                style="left: 50px !important"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="main-bg development">
-      <div class="container">
-        <h4 class="text-light fw-bold">برنامج تطوير الخريجين</h4>
-        <div class="main-line bg-light my-2 rounded"></div>
-        <p class="text-light fw-light">
-          انطلاقًا مـن رؤيـة المملكـة 2030 ورهانهـا المسـتمر علـى الكفـاءات
-          الوطنيـة الشـابة؛ يسـعى مركـــــز دعـــــم اتخـــــــاذ القـــــرار
-          إلى تمكيـن حديثـي التخـرج وتطويـر مهاراتهـم ومعارفهـم فـي مجالات
-          اختصاصه. عمـــل المركـــز علـــى تطويـــر البرنامج والممارســـات
-          والمـــواد مع كليـــة هاريس في جامعة شيكاغو، وعُدّلت المسارات بما
-          يتوافق مع التطلعات واستفادة الجهات الحكومية الأخـــرى عبر نقـــل
-          المعرفة والتطبيق العملي.
-        </p>
-        <div class="row mx-0 justify-content-center px-5 mt-5">
-          <div class="col-12 col-md-3">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center"
-            >
-              <div class="icon">
-                <img src="./assets/images/landing-1/cross.png" alt="" />
-              </div>
-              <p class="h1 text-light my-3">5</p>
-              <p class="text-light fw-light">مسارات</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center"
-            >
-              <div class="icon">
-                <img src="./assets/images/landing-1/icon-success.png" alt="" />
-              </div>
-              <p class="h1 text-light my-3">5</p>
-              <p class="text-light fw-light">دفعات</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center"
-            >
-              <div class="icon">
-                <img src="./assets/images/landing-1/users-success.png" alt="" />
-              </div>
-              <p class="h1 text-light my-3">271</p>
-              <p class="text-light fw-light">مستفيدا</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mx-0 mt-5">
-          <div class="col-12 col-md-6">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item border overflow-auto">
-                <h2 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button shadow-none fw-bold"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    الدفعة الخامسة 2024م - 2025م
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p class="fw-bold">مسارات البرنامج</p>
-                    <p>
-                      السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
-                      الأعمال.
-                    </p>
-                    <p class="fw-bold">
-                      استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
-                    </p>
-                    <div class="">
-                      <img src="./assets/images/landing-1/icon1.png" alt="" />
-                      التدريب الأكاديمي: (4) أشهر
-                      <span>|</span>
-                      <img src="./assets/images/landing-1/icon2.png" alt="" />
-                      التدريب المهني: (6) أشهر
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item border overflow-auto mt-3">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button shadow-none fw-bold collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    الدفعة الرابعة 2023م - 2024م
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p class="fw-bold">مسارات البرنامج</p>
-                    <p>
-                      السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
-                      الأعمال.
-                    </p>
-                    <p class="fw-bold">
-                      استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
-                    </p>
-                    <div class="">
-                      <img src="./assets/images/landing-1/icon1.png" alt="" />
-                      التدريب الأكاديمي: (4) أشهر
-                      <span>|</span>
-                      <img src="./assets/images/landing-1/icon2.png" alt="" />
-                      التدريب المهني: (6) أشهر
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item border overflow-auto mt-3">
-                <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button shadow-none fw-bold collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    الدفعة الثالثة 2022م - 2023م
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p class="fw-bold">مسارات البرنامج</p>
-                    <p>
-                      السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
-                      الأعمال.
-                    </p>
-                    <p class="fw-bold">
-                      استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
-                    </p>
-                    <div class="">
-                      <img src="./assets/images/landing-1/icon1.png" alt="" />
-                      التدريب الأكاديمي: (4) أشهر
-                      <span>|</span>
-                      <img src="./assets/images/landing-1/icon2.png" alt="" />
-                      التدريب المهني: (6) أشهر
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item border overflow-auto mt-3">
-                <h2 class="accordion-header" id="headingFour">
-                  <button
-                    class="accordion-button shadow-none fw-bold collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    الدفعة الثانية 2021م - 2022م
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p class="fw-bold">مسارات البرنامج</p>
-                    <p>
-                      السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
-                      الأعمال.
-                    </p>
-                    <p class="fw-bold">
-                      استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
-                    </p>
-                    <div class="">
-                      <img src="./assets/images/landing-1/icon1.png" alt="" />
-                      التدريب الأكاديمي: (4) أشهر
-                      <span>|</span>
-                      <img src="./assets/images/landing-1/icon2.png" alt="" />
-                      التدريب المهني: (6) أشهر
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item border overflow-auto mt-3">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button shadow-none fw-bold collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                    الدفعة الاولى 2020م - 2021م
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p class="fw-bold">مسارات البرنامج</p>
-                    <p>
-                      السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
-                      الأعمال.
-                    </p>
-                    <p class="fw-bold">
-                      استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
-                    </p>
-                    <div class="">
-                      <img src="./assets/images/landing-1/icon1.png" alt="" />
-                      التدريب الأكاديمي: (4) أشهر
-                      <span>|</span>
-                      <img src="./assets/images/landing-1/icon2.png" alt="" />
-                      التدريب المهني: (6) أشهر
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 right">
-            <img
-              src="./assets/images/landing-1/users-success-light.png"
-              alt="image"
-            />
-            <p class="h1 text-light my-3">25</p>
-            <p class="h1 text-light">مستفيدا</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Partners section -->
-    <section class="partners mb-3">
-      <div class="container position-relative">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2 class="mb-3">قسم الشركاء</h2>
-          <div class="d-flex gap-2">
-            <button
-              class="prev absolute btn shadow-none button-background-neutral-default"
-            >
-              <i class="bi bi-chevron-left"></i>
-            </button>
-            <button
-              class="next absolute btn shadow-none button-background-neutral-default"
-            >
-              <i class="bi bi-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-        <div class="swiper partners-swiper">
-          <div class="swiper-wrapper pb-3">
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part1.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part2.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part3.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part4.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part5.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part6.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part7.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part8.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part9.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part10.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part1.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part2.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item border d-flex justify-content-center">
-                <img
-                  class="img-fluid p-2"
-                  src="./assets/images/landing-1/parteners/part3.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="container my-3">
-      <p class="text-end">
-        تاريخ آخر تعديل: 04/12/2020 - 4:13 م بتوقيت السعودية
+      <p class="col-9 mt-3">
+        هنا يمكنك إضافة وصف مختصر حول الغرض من البوابة متبوعًا بزر الحث على
+        اتخاذ إجراء.
       </p>
     </div>
 
-    <!-- footer -->
-    <footer class="py-5">
-      <div class="container">
-        <div class="row m-0 g-3">
-          <div class="col-12 col-md-6 col-lg-3">
-            <h5 class="pb-2" data-translate="overviewTitle">Overview</h5>
-            <ul class="list-unstyled mt-2">
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="aboutPortal"
-                >
-                  About [name of the portal]
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="privacyTerms"
-                >
-                  Privacy and terms of use
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="howToUse"
-                >
-                  How to use
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="newsEvents"
-                >
-                  News and events
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="slaStatistics"
-                >
-                  Service level agreement statistics
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h5 class="pb-2" data-translate="importantLinksTitle">
-              Important links
-            </h5>
-            <ul class="list-unstyled mt-2">
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="nationalServicePortal"
-                >
-                  National service portal
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="openGovData"
-                >
-                  Open government data
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="nationalStrategy"
-                >
-                  National strategy for data
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="openDataPortal"
-                >
-                  Open data portal
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="eParticipationPortal"
-                >
-                  E-participation portal
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h5 class="pb-2" data-translate="contactSupportTitle">
-              Contact and support
-            </h5>
-            <ul class="list-unstyled mt-2">
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="customerHub"
-                >
-                  Customer hub
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="contactUs"
-                >
-                  Contact us
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="engageWithUs"
-                >
-                  Engage with us
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="submitComplaint"
-                >
-                  Submit complaint
-                </a>
-              </li>
-              <li class="mb-2">
-                <a
-                  class="text-decoration-none"
-                  href=""
-                  data-translate="reportCorruption"
-                >
-                  Report corruption
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="followUs col-12 col-md-6 col-lg-3">
-            <h5 class="pb-2" data-translate="socialMediaTitle">Social Media</h5>
-            <ul class="list-unstyled mt-3 d-flex gap-2">
-              <li class="rounded">
-                <a href="" class="text-decoration-none py-1 px-2 d-block">
-                  <i class="bi bi-twitter-x"></i>
-                </a>
-              </li>
-              <li class="rounded">
-                <a href="" class="text-decoration-none py-1 px-2 d-block">
-                  <i class="bi bi-linkedin"></i>
-                </a>
-              </li>
-              <li class="rounded">
-                <a href="" class="text-decoration-none py-1 px-2 d-block">
-                  <i class="bi bi-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <div class="acceptability mt-5">
-              <h5 class="pb-2" data-translate="acceptabilityToolsTitle">
-                Acceptability Tools
-              </h5>
-              <ul class="list-unstyled mt-3 d-flex gap-2">
-                <li class="rounded py-1 px-2 pointer-event">
-                  <i class="bi bi-hand-index"></i>
-                </li>
-                <li class="rounded py-1 px-2 pointer-event">
-                  <i class="bi bi-zoom-in"></i>
-                </li>
-                <li class="rounded py-1 px-2 pointer-event">
-                  <i class="bi bi-eye"></i>
-                </li>
-              </ul>
+    <!-- Swiper Section -->
+    <div class="swiper service-swiper swiper-container position-relative">
+      <div class="swiper-wrapper mt-5">
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">
+                إعداد الدراسات التنموية
+              </h2>
+              <p class="text-truncate-4 small lh">
+                إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
+                يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
+              </p>
             </div>
           </div>
         </div>
-
-        <div class="row mt-5 gy-3">
-          <div class="col-12 col-md-6">
-            <ul class="list-unstyled d-flex gap-2 mb-4">
-              <li>
-                <a class="" href="" data-translate="sitemapLink">Sitemap</a>
-              </li>
-              <li>
-                <a class="" href="">RSS</a>
-              </li>
-              <li>
-                <a class="" href="" data-translate="mobileAppLink"
-                  >Mobile App</a
-                >
-              </li>
-            </ul>
-            <p class=" " data-translate="allRightsReserved">
-              All Rights Reserved For Digital Government Authority © 2024
-            </p>
-            <p class="small" data-translate="developedBy">
-              Developed and Maintained by [name]
-            </p>
-            <p class="small mt-3" data-translate="lastUpdate">
-              last update date: 2020/04/02
-            </p>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">
+                إعداد الدراسات التنموية
+              </h2>
+              <p class="text-truncate-4 small lh">
+                إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
+                يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
+              </p>
+            </div>
           </div>
-          <div
-            class="logos col-12 col-md-6 d-flex gap-2 flex-wrap justify-content-center justify-content-md-end align-items-center"
-          >
-            <img
-              src="./assets/images/landing-1/footer-logo.png"
-              alt=""
-              class="py-1 px-2"
-            />
-            <div style="margin-left: -30px" class="pipeline"></div>
-            <img src="./assets/images/landing-1/footer-logo-2.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">
+                إعداد الدراسات التنموية
+              </h2>
+              <p class="text-truncate-4 small lh">
+                إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
+                يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">
+                إعداد الدراسات التنموية
+              </h2>
+              <p class="text-truncate-4 small lh">
+                إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
+                يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">
+                إعداد الدراسات التنموية
+              </h2>
+              <p class="text-truncate-4 small lh">
+                إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
+                يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">
+                إعداد الدراسات التنموية
+              </h2>
+              <p class="text-truncate-4 small lh">
+                إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
+                يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">
+                إعداد الدراسات التنموية
+              </h2>
+              <p class="text-truncate-4 small lh">
+                إعداد الدراسات المتعلقة بالموضوعات التنموية ذات الأولوية، وما
+                يواجهها من عوائق وصعوبات ومشكلات، وطرح التوصيات بشأنها
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
 
-    <!-- JS -->
-    <script src="js/main.min.js"></script>
-    <!-- custom -->
-    <!-- <script src="js/your-custom-file.js"></script> -->
-  </body>
+      <div class="container-fluid mt-4">
+        <div class="d-flex justify-content-between align-items-center py-4 pyx-5">
+          <!-- Pagination -->
+          <div class="service-swiper-pagination swiper-pagination position-relative start-0 end-0 bottom-0"></div>
+          <div class="position-relative me-5 pe-4">
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev start-0 end-0 bottom-0"></div>
+            <div class="swiper-button-next start-0 end-0 bottom-0" style="left: 50px !important"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- values -->
+  <section>
+    <div class="container">
+      <div class="col-8 col-md-8 p-0">
+        <h3 class="main-title fw-bold">القيم البارزة</h3>
+        <div class="main-line mt-2 rounded"></div>
+      </div>
+      <p class="my-3">
+        هنا يمكنك إضافة وصف مختصر حول الغرض من البوابة متبوعًا بزر الحث على
+        اتخاذ إجراء.
+      </p>
+
+      <div class="row mx-0 g-4">
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="p-2 rounded border">
+            <img class="w-100 rounded" src="./assets/images/landing-1/val1.png" alt="" />
+            <p class="fw-bold mt-3">التجاوب</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="p-2 rounded border">
+            <img class="w-100 rounded" src="./assets/images/landing-1/val2.png" alt="" />
+            <p class="fw-bold mt-3">التعاون</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="p-2 rounded border">
+            <img class="w-100 rounded" src="./assets/images/landing-1/val3.png" alt="" />
+            <p class="fw-bold mt-3">الموضوعية</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="p-2 rounded border">
+            <img class="w-100 rounded" src="./assets/images/landing-1/val4.png" alt="" />
+            <p class="fw-bold mt-3">الامتياز</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container-fluid overflow-hidden">
+    <div class="container">
+      <div class="row m-0">
+        <div class="col-8 col-md-8 p-0">
+          <h4 class="fw-bold main-title">
+            أبرز مهام مركز دعم اتخاذ القرار واختصاصاته
+          </h4>
+          <div class="main-line mt-2 rounded"></div>
+        </div>
+        <div class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start">
+          <button class="btn btn-default border shadow-none">View all</button>
+        </div>
+      </div>
+
+      <p class="col-9 mt-3">
+        هنا يمكنك إضافة وصف مختصر حول الغرض من البوابة متبوعًا بزر الحث على
+        اتخاذ إجراء.
+      </p>
+    </div>
+
+    <!-- Swiper Section -->
+    <div class="swiper service-swiper swiper-container position-relative">
+      <div class="swiper-wrapper mt-5">
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
+              <p class="text-truncate-4 small lh">
+                بناء الشراكات مع الاجهزة الحكومية المختلفة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
+              <p class="text-truncate-4 small lh">
+                بناء الشراكات مع الاجهزة الحكومية المختلفة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
+              <p class="text-truncate-4 small lh">
+                بناء الشراكات مع الاجهزة الحكومية المختلفة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
+              <p class="text-truncate-4 small lh">
+                بناء الشراكات مع الاجهزة الحكومية المختلفة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
+              <p class="text-truncate-4 small lh">
+                بناء الشراكات مع الاجهزة الحكومية المختلفة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
+              <p class="text-truncate-4 small lh">
+                بناء الشراكات مع الاجهزة الحكومية المختلفة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card p-3 box">
+            <div class="image">
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
+            </div>
+            <div class="cardContent">
+              <h2 class="text-truncate-2 text-capitalize">بناء الشراكات</h2>
+              <p class="text-truncate-4 small lh">
+                بناء الشراكات مع الاجهزة الحكومية المختلفة
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 mt-4">
+        <div class="d-flex justify-content-between align-items-center py-4 mx-5">
+          <!-- Pagination -->
+          <div class="service-swiper-pagination swiper-pagination position-relative start-0 end-0 bottom-0"></div>
+          <div class="position-relative me-5 pe-4">
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev start-0 end-0 bottom-0"></div>
+            <div class="swiper-button-next start-0 end-0 bottom-0" style="left: 50px !important"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="development" class="main-bg development">
+    <div class="container">
+      <h4 class="text-light fw-bold">برنامج تطوير الخريجين</h4>
+      <div class="main-line bg-light my-2 rounded"></div>
+      <p class="text-light fw-light">
+        انطلاقًا مـن رؤيـة المملكـة 2030 ورهانهـا المسـتمر علـى الكفـاءات
+        الوطنيـة الشـابة؛ يسـعى مركـــــز دعـــــم اتخـــــــاذ القـــــرار
+        إلى تمكيـن حديثـي التخـرج وتطويـر مهاراتهـم ومعارفهـم فـي مجالات
+        اختصاصه. عمـــل المركـــز علـــى تطويـــر البرنامج والممارســـات
+        والمـــواد مع كليـــة هاريس في جامعة شيكاغو، وعُدّلت المسارات بما
+        يتوافق مع التطلعات واستفادة الجهات الحكومية الأخـــرى عبر نقـــل
+        المعرفة والتطبيق العملي.
+      </p>
+      <div class="row mx-0 justify-content-center px-5 mt-5">
+        <div class="col-12 col-md-3">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="icon">
+              <img src="./assets/images/landing-1/cross.png" alt="" />
+            </div>
+            <p class="h1 text-light my-3">5</p>
+            <p class="text-light fw-light">مسارات</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="icon">
+              <img src="./assets/images/landing-1/icon-success.png" alt="" />
+            </div>
+            <p class="h1 text-light my-3">5</p>
+            <p class="text-light fw-light">دفعات</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="icon">
+              <img src="./assets/images/landing-1/users-success.png" alt="" />
+            </div>
+            <p class="h1 text-light my-3">271</p>
+            <p class="text-light fw-light">مستفيدا</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mx-0 mt-5">
+        <div class="col-12 col-md-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item border overflow-auto">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button shadow-none fw-bold" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  الدفعة الخامسة 2024م - 2025م
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="fw-bold">مسارات البرنامج</p>
+                  <p>
+                    السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
+                    الأعمال.
+                  </p>
+                  <p class="fw-bold">
+                    استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
+                  </p>
+                  <div class="">
+                    <img src="./assets/images/landing-1/icon1.png" alt="" />
+                    التدريب الأكاديمي: (4) أشهر
+                    <span>|</span>
+                    <img src="./assets/images/landing-1/icon2.png" alt="" />
+                    التدريب المهني: (6) أشهر
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border overflow-auto mt-3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button shadow-none fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  الدفعة الرابعة 2023م - 2024م
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="fw-bold">مسارات البرنامج</p>
+                  <p>
+                    السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
+                    الأعمال.
+                  </p>
+                  <p class="fw-bold">
+                    استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
+                  </p>
+                  <div class="">
+                    <img src="./assets/images/landing-1/icon1.png" alt="" />
+                    التدريب الأكاديمي: (4) أشهر
+                    <span>|</span>
+                    <img src="./assets/images/landing-1/icon2.png" alt="" />
+                    التدريب المهني: (6) أشهر
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border overflow-auto mt-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button shadow-none fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  الدفعة الثالثة 2022م - 2023م
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="fw-bold">مسارات البرنامج</p>
+                  <p>
+                    السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
+                    الأعمال.
+                  </p>
+                  <p class="fw-bold">
+                    استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
+                  </p>
+                  <div class="">
+                    <img src="./assets/images/landing-1/icon1.png" alt="" />
+                    التدريب الأكاديمي: (4) أشهر
+                    <span>|</span>
+                    <img src="./assets/images/landing-1/icon2.png" alt="" />
+                    التدريب المهني: (6) أشهر
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border overflow-auto mt-3">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button shadow-none fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  الدفعة الثانية 2021م - 2022م
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="fw-bold">مسارات البرنامج</p>
+                  <p>
+                    السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
+                    الأعمال.
+                  </p>
+                  <p class="fw-bold">
+                    استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
+                  </p>
+                  <div class="">
+                    <img src="./assets/images/landing-1/icon1.png" alt="" />
+                    التدريب الأكاديمي: (4) أشهر
+                    <span>|</span>
+                    <img src="./assets/images/landing-1/icon2.png" alt="" />
+                    التدريب المهني: (6) أشهر
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border overflow-auto mt-3">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button shadow-none fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  الدفعة الاولى 2020م - 2021م
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="fw-bold">مسارات البرنامج</p>
+                  <p>
+                    السياسات العامة، والأمن السيبراني، وإدارة المشاريع، وإدارة
+                    الأعمال.
+                  </p>
+                  <p class="fw-bold">
+                    استمرت الرحلة التدريبية (10) أشهر، وتضمنت:
+                  </p>
+                  <div class="">
+                    <img src="./assets/images/landing-1/icon1.png" alt="" />
+                    التدريب الأكاديمي: (4) أشهر
+                    <span>|</span>
+                    <img src="./assets/images/landing-1/icon2.png" alt="" />
+                    التدريب المهني: (6) أشهر
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 right">
+          <img src="./assets/images/landing-1/users-success-light.png" alt="image" />
+          <p class="h1 text-light my-3">25</p>
+          <p class="h1 text-light">مستفيدا</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners section -->
+  <section class="partners mb-3">
+    <div class="container position-relative">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="mb-3">قسم الشركاء</h2>
+        <div class="d-flex gap-2">
+          <button class="prev absolute btn shadow-none button-background-neutral-default">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="next absolute btn shadow-none button-background-neutral-default">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="swiper partners-swiper">
+        <div class="swiper-wrapper pb-3">
+
+          <div class="swiper-slide">
+            <div class="item border d-flex justify-content-center mx-auto w-100">
+              <img class="img-fluid" src="./assets/images/landing-1/parteners/part3.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item border d-flex justify-content-center mx-auto w-100">
+              <img class="img-fluid" src="./assets/images/landing-1/parteners/part4.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item border d-flex justify-content-center mx-auto w-100">
+              <img class="img-fluid" src="./assets/images/landing-1/parteners/part5.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item border d-flex justify-content-center mx-auto w-100">
+              <img class="img-fluid" src="./assets/images/landing-1/parteners/part6.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item border d-flex justify-content-center mx-auto w-100">
+              <img class="img-fluid" src="./assets/images/landing-1/parteners/part7.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item border d-flex justify-content-center mx-auto w-100">
+              <img class="img-fluid" src="./assets/images/landing-1/parteners/part8.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item border d-flex justify-content-center mx-auto w-100">
+              <img class="img-fluid" src="./assets/images/landing-1/parteners/part9.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item border d-flex justify-content-center mx-auto w-100">
+              <img class="img-fluid" src="./assets/images/landing-1/parteners/part10.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="item border d-flex justify-content-center mx-auto w-100">
+              <img class="img-fluid" src="./assets/images/landing-1/parteners/part3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container my-3">
+    <p class="text-end">
+      تاريخ آخر تعديل: 04/12/2020 - 4:13 م بتوقيت السعودية
+    </p>
+  </div>
+
+  <!-- footer -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row m-0 g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="pb-2" data-translate="overviewTitle">Overview</h5>
+          <ul class="list-unstyled mt-2">
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="aboutPortal">
+                About [name of the portal]
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="privacyTerms">
+                Privacy and terms of use
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="howToUse">
+                How to use
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="newsEvents">
+                News and events
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="slaStatistics">
+                Service level agreement statistics
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="pb-2" data-translate="importantLinksTitle">
+            Important links
+          </h5>
+          <ul class="list-unstyled mt-2">
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="nationalServicePortal">
+                National service portal
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="openGovData">
+                Open government data
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="nationalStrategy">
+                National strategy for data
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="openDataPortal">
+                Open data portal
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="eParticipationPortal">
+                E-participation portal
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="pb-2" data-translate="contactSupportTitle">
+            Contact and support
+          </h5>
+          <ul class="list-unstyled mt-2">
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="customerHub">
+                Customer hub
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="contactUs">
+                Contact us
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="engageWithUs">
+                Engage with us
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="submitComplaint">
+                Submit complaint
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="text-decoration-none" href="" data-translate="reportCorruption">
+                Report corruption
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="followUs col-12 col-md-6 col-lg-3">
+          <h5 class="pb-2" data-translate="socialMediaTitle">Social Media</h5>
+          <ul class="list-unstyled mt-3 d-flex gap-2">
+            <li class="rounded">
+              <a href="" class="text-decoration-none py-1 px-2 d-block">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </li>
+            <li class="rounded">
+              <a href="" class="text-decoration-none py-1 px-2 d-block">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li class="rounded">
+              <a href="" class="text-decoration-none py-1 px-2 d-block">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="acceptability mt-5">
+            <h5 class="pb-2" data-translate="acceptabilityToolsTitle">
+              Acceptability Tools
+            </h5>
+            <ul class="list-unstyled mt-3 d-flex gap-2">
+              <li class="rounded py-1 px-2 pointer-event">
+                <i class="bi bi-hand-index"></i>
+              </li>
+              <li class="rounded py-1 px-2 pointer-event">
+                <i class="bi bi-zoom-in"></i>
+              </li>
+              <li class="rounded py-1 px-2 pointer-event">
+                <i class="bi bi-eye"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5 gy-3">
+        <div class="col-12 col-md-6">
+          <ul class="list-unstyled d-flex gap-2 mb-4">
+            <li>
+              <a class="" href="" data-translate="sitemapLink">Sitemap</a>
+            </li>
+            <li>
+              <a class="" href="">RSS</a>
+            </li>
+            <li>
+              <a class="" href="" data-translate="mobileAppLink">Mobile App</a>
+            </li>
+          </ul>
+          <p class=" " data-translate="allRightsReserved">
+            All Rights Reserved For Digital Government Authority © 2024
+          </p>
+          <p class="small" data-translate="developedBy">
+            Developed and Maintained by [name]
+          </p>
+          <p class="small mt-3" data-translate="lastUpdate">
+            last update date: 2020/04/02
+          </p>
+        </div>
+        <div
+          class="logos col-12 col-md-6 d-flex gap-2 flex-wrap justify-content-center justify-content-md-end align-items-center">
+          <a href="#hero"><img src="./assets/images/landing-1/footer-logo.png" alt="" class="py-1 px-2" /></a>
+          <div style="margin-left: -30px" class="pipeline"></div>
+          <img src="./assets/images/landing-1/footer-logo-2.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.min.js"></script>
+  <!-- custom -->
+  <!-- <script src="js/your-custom-file.js"></script> -->
+</body>
+
 </html>

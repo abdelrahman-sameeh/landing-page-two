@@ -6,7 +6,16 @@ header {
 
   .topBar {
     background-color: var(--background-neutral-100);
+    background-color: var(--background-primary);
     border-bottom: 1px solid var(--border-background-neutral);
+
+    ul {
+      li {
+        i {
+          color: var(--text-oncolor-primary);
+        }
+      }
+    }
   }
 
   .navbar {
@@ -15,6 +24,12 @@ header {
 
     .navbar-brand a .h_2030 {
       height: 58px;
+    }
+
+
+    .navbar-collapse {
+      flex-basis: 60%;
+      flex-grow: unset;
     }
 
     .navbar-nav {
@@ -55,10 +70,11 @@ header {
 }
 
 @media (max-width:992px) {
-  header ul.navbar-nav{
+  header ul.navbar-nav {
     align-items: center;
   }
-  header form{
+
+  header form {
     flex-direction: column;
     align-items: center;
   }
@@ -66,7 +82,7 @@ header {
 
 
 @media (max-width:500px) {
-  header  .topBar > ul:nth-child(1) {
+  header .topBar>ul:nth-child(1) {
     display: none !important;
   }
 }

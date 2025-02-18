@@ -53,23 +53,28 @@
 //   font-style: normal;
 // }
 
-body {
-  font-family: "IBM", sans-serif;
-}
+
+[dir="rtl"],
+[dir="ltr"] {
+
+  body {
+    font-family: "IBM", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
 
 
-h1,
-h2,
-h3,
-h5,
-h6 {
-  font-weight: 700;
-}
+  a,
+  p,
+  span,
+  div {
+    font-weight: normal;
+  }
 
-
-a,
-p,
-span,
-div {
-  font-weight: normal;
 }

@@ -1,18 +1,20 @@
-@use '../addons/bootstrap/bootstrap.min.css';
-@use '../addons/bootstrap-icons/bootstrap-icons.min.css';
-@use '../addons/swiper/swiper.min.css';
-@use './utils/variables';
-@use './utils/fonts';
-@use './utils/reset';
-@use './utils/utils';
-// Main
-@use './main';
-// Components
-@use './components/main-line';
-@use './components/badge';
-@use './components/header';
-@use './components/footer';
-// Pages
-@use './pages/home';
-// Output: ../../main.css
-/*# sourceMappingURL=../../main.css.map */
+ @use '../addons/bootstrap/bootstrap.rtl.min.css';
+ @use '../addons/bootstrap-icons/bootstrap-icons.min.css';
+ @use '../addons/swiper/swiper.min.css';
+ @use './utils/variables';
+ @use './utils/fonts';
+ @use './utils/reset';
+ @use './utils/utils';
+ // Main
+ @use './main';
+ // Components
+ @use './components/main-line';
+ @use './components/badge';
+ @use './components/header';
+ @use './components/footer';
+ // Pages
+ @use './pages/home';
+
+
+ // Output: ../../main.css
+ /*# sourceMappingURL=../../main.css.map */

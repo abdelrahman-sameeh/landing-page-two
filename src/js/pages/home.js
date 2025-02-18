@@ -77,10 +77,8 @@ var swiper = new Swiper(".service-swiper", {
     },
   },
 });
-
-
 var swiper = new Swiper(".partners-swiper", {
-  slidesPerView: 10,
+  slidesPerView: 6,
   spaceBetween: 10,
   freeMode: true,
   loop: true,
@@ -90,23 +88,23 @@ var swiper = new Swiper(".partners-swiper", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     400: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
     500: {
-      slidesPerView: 5,
-      spaceBetween: 10,
+      slidesPerView: 4,
+      spaceBetween: 6,
     },
     768: {
-      slidesPerView: 7,
+      slidesPerView: 6,
       spaceBetween: 10,
     },
     992: {
-      slidesPerView: 10,
+      slidesPerView: 6,
       spaceBetween: 10,
     },
   },
