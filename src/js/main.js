@@ -58,9 +58,9 @@ const translations = {
     sitemapLink: "Sitemap",
     mobileAppLink: "Mobile App",
     allRightsReserved:
-      "All rights reserved to the Government Digital Authority &copy; 2024",
-    developedBy: "Developed and maintained by [Name]",
-    lastUpdate: "Last update date: 2020/04/02",
+      "All rights reserved to the DSC © 2025",
+    developedBy: "Developed and maintained by DSC",
+    lastUpdate: "Last update date: 2025/03/01",
   },
   ar: {
     // Header
@@ -100,16 +100,16 @@ const translations = {
     acceptabilityToolsTitle: "أدوات الاتاحة والوصول",
     sitemapLink: "خريطة الموقع",
     mobileAppLink: "التطبيق المحمول",
-    allRightsReserved: "جميع الحقوق محفوظة للهيئة الرقمية للحكومة &copy; 2024",
-    developedBy: "تم التطوير والصيانة بواسطة [الاسم]",
-    lastUpdate: "تاريخ آخر تحديث: 2020/04/02",
+    allRightsReserved: "جميع الحقوق محفوظة لمركز دعم اتخاذ القرار © 2025",
+    developedBy: "تم التطوير والصيانة بواسطة مركز دعم اتخاذ القرار",
+    lastUpdate: "تاريخ آخر تحديث: 2025/03/01",
   },
 };
 
 const applyTranslations = (translations, isBodyContent = true) => {
   const currentLang = localStorage.getItem("language") || 'ar';
   const texts = translations[currentLang];
-  let items =  document.querySelectorAll(
+  let items = document.querySelectorAll(
     "header [data-translate], footer [data-translate]"
   );
 

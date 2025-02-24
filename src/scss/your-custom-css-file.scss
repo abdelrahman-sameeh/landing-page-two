@@ -34,6 +34,12 @@ op-5 {
   opacity: 0.5;
 }
 
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 section.hero-section p {
   font-size: 60px;
   position: relative;
@@ -49,6 +55,7 @@ section.about img {
 
 /* service section */
 section .service-swiper .card {
+  height: 475px;
   border-radius: var(--radius-lg);
 }
 
