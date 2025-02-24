@@ -72,7 +72,7 @@ var swiper = new Swiper(".service-swiper", {
       spaceBetween: 24,
     },
     1400: {
-      slidesPerView: 5, // Show 5 slides for extra-large screens
+      slidesPerView: 4, // Show 5 slides for extra-large screens
       spaceBetween: 24,
     },
   },
