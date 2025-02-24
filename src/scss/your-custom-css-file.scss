@@ -120,15 +120,15 @@ section.development .accordion-item {
 
 section.development .accordion-header .accordion-button {
   justify-content: space-between !important;
-  color: black;
+  color: var(--text-default);
   background-color: white;
-  padding: 22px 20px 12px 32px;
+  padding: 16px 20px 16px 32px;
   background-color: var(--background-neutral-50);
 }
 
 section.development .accordion-header .accordion-button.collapsed {
-  background-color: var(--colors-primary-sa-flag-600-primary);
-  color: white;
+  background-color: var(--colors-primary-sa-flag-700);
+  color: var(--text-default);
 }
 
 section.development .accordion-header .accordion-button.collapsed::after {
@@ -151,6 +151,10 @@ section.development .right {
   border-radius: 12px;
 }
 
+.accordion-body {
+  background-color: var(--background-card);
+}
+
 
 .accordion-body>* {
 
@@ -169,6 +173,7 @@ section.development .right {
 .partners-swiper .swiper-slide .item img {
   height: 80px;
   object-fit: contain;
+  border-radius: 8px;
 }
 
 section.partners .btn.prev,
@@ -220,5 +225,16 @@ section.partners .btn.next {
 @media (max-width: 767px) {
   section.news .row.reversed {
     flex-direction: column-reverse;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  // .logo1 {
+  //   filter: grayscale(1) brightness(2);
+  // }
+  .logo2 {
+    opacity: 1;
+    filter: brightness(1.5);
   }
 }
