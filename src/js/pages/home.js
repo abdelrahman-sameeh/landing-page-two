@@ -45,6 +45,7 @@ var swiper = new Swiper(".service-swiper", {
   freeMode: true, // Free mode for smooth dragging
   slidesPerView: 'auto', // Adjust the number of slides based on content width
   spaceBetween: 24, // Space between slides
+  reverseDirection: true,
   autoplay: {
     delay: 3000, // Time in ms between slide changes
     disableOnInteraction: false, // Autoplay will continue even after user interaction
@@ -72,7 +73,7 @@ var swiper = new Swiper(".service-swiper", {
       spaceBetween: 24,
     },
     1400: {
-      slidesPerView: 4, // Show 5 slides for extra-large screens
+      slidesPerView: 4.35, // Show 5 slides for extra-large screens
       spaceBetween: 24,
     },
   },
