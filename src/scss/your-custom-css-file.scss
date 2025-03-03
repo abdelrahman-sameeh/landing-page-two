@@ -128,7 +128,7 @@ section.development .accordion-header .accordion-button {
 
 section.development .accordion-header .accordion-button.collapsed {
   background-color: var(--colors-primary-sa-flag-700);
-  color: var(--text-default);
+  color: var(--text-oncolor-primary);
 }
 
 section.development .accordion-header .accordion-button.collapsed::after {
@@ -180,6 +180,17 @@ section.partners .btn.prev,
 section.partners .btn.next {
   top: 70px;
   position: absolute;
+  border-radius: 999px;
+}
+
+section.partners .btn.prev:hover,
+section.partners .btn.next:hover {
+  background-color: var(--stepper-button-completed);
+}
+
+section.partners .btn.prev:hover i,
+section.partners .btn.next:hover i {
+  color: var(--text-oncolor-primary);
 }
 
 section.partners .btn.prev {
